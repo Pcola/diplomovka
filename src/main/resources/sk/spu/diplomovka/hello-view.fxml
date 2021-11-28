@@ -50,9 +50,9 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="buttonOpen" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" text="OPEN" />
-            <Button fx:id="buttonClose" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" text="CLOSE" GridPane.columnIndex="1" />
-            <Button fx:id="buttonSend" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" text="SEND" GridPane.columnIndex="2" />
+            <Button fx:id="buttonOpen" mnemonicParsing="false" onAction="#connectToPort" prefHeight="40.0" prefWidth="120.0" text="OPEN" />
+            <Button fx:id="buttonClose" mnemonicParsing="false" onAction="#closePort" prefHeight="40.0" prefWidth="120.0" text="CLOSE" GridPane.columnIndex="1" />
+            <Button fx:id="buttonSend" mnemonicParsing="false" onAction="#sendData" prefHeight="40.0" prefWidth="120.0" text="SEND" GridPane.columnIndex="2" />
          </children>
       </GridPane>
       <TextArea fx:id="textArea" layoutX="310.0" layoutY="35.0" prefHeight="174.0" prefWidth="401.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="49.0" AnchorPane.topAnchor="35.0" />
