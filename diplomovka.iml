@@ -35,5 +35,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-engine:5.7.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-engine:1.7.1" level="project" />
     <orderEntry type="library" name="Maven: com.fazecast:jSerialComm:2.7.0" level="project" />
+    <orderEntry type="library" name="Maven: de.perdoctus.fx:javafx-cdi-bootstrap:1.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss.weld.se:weld-se:2.4.0.Final" level="project" />
   </component>
 </module>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
@@ -9,10 +10,11 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.TextFlow?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.spu.diplomovka.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.spu.diplomovka.AppController">
    <children>
-      <GridPane fx:id="gridPaneSettingCom" layoutX="51.0" layoutY="22.0" prefHeight="298.0" prefWidth="260.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="22.0">
+      <GridPane fx:id="gridPaneSettingCom" layoutX="51.0" layoutY="22.0" prefHeight="298.0" prefWidth="260.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="35.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="150.0" />
@@ -55,19 +57,10 @@
             <Button fx:id="buttonSend" mnemonicParsing="false" onAction="#sendData" prefHeight="40.0" prefWidth="120.0" text="SEND" GridPane.columnIndex="2" />
          </children>
       </GridPane>
-      <TextArea fx:id="textArea" layoutX="310.0" layoutY="35.0" prefHeight="174.0" prefWidth="401.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="49.0" AnchorPane.topAnchor="35.0" />
-      <GridPane fx:id="gridPaneEnd" layoutX="289.0" layoutY="227.0" prefHeight="40.0" prefWidth="236.0" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="227.0">
-        <columnConstraints>
-            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="127.0" minWidth="10.0" prefWidth="67.0" />
-          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="204.0" minWidth="10.0" prefWidth="172.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-         <children>
-            <Label fx:id="labelEndLine" text="END Line" />
-            <ComboBox fx:id="comboboxEndLine" prefWidth="150.0" GridPane.columnIndex="1" />
-         </children>
-      </GridPane>
+      <TextArea fx:id="textArea" layoutX="310.0" layoutY="48.0" prefHeight="256.0" prefWidth="401.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="49.0" AnchorPane.topAnchor="60.0" />
+      <TextFlow fx:id="textflow" accessibleRole="BUTTON" layoutX="419.0" onKeyPressed="#hideTextFlow" prefHeight="33.0" prefWidth="381.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+         <padding>
+            <Insets right="10.0" />
+         </padding></TextFlow>
    </children>
 </AnchorPane>

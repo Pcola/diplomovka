@@ -47,6 +47,12 @@
       <artifactId>jSerialComm</artifactId>
       <version>2.7.0</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/de.perdoctus.fx/javafx-cdi-bootstrap -->
+    <dependency>
+      <groupId>de.perdoctus.fx</groupId>
+      <artifactId>javafx-cdi-bootstrap</artifactId>
+      <version>1.0.3</version>
+    </dependency>
 
   </dependencies>
 
@@ -70,7 +76,7 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>sk.spu.diplomovka/sk.spu.diplomovka.HelloApplication</mainClass>
+              <mainClass>sk.spu.diplomovka/sk.spu.diplomovka.App</mainClass>
             </configuration>
           </execution>
         </executions>
